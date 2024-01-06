@@ -1,1 +1,60 @@
+/* ヘッダー&メインビジュアル ***************************/
+.mv-img {
+    width: 100%;
+    /* border: solid 1px #080; */
+}
 
+/* メインコンテンツ全体 ***************************************/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8fff8;
+}
+
+.section-title {
+    text-align: center;
+    color: #20a020;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+    padding-top: 20px;
+    margin: 0px 150px;
+}
+
+.purchase{
+    border: solid 1px #080;
+    /*ここから*/
+}
+
+/* 食品アピール見出し① ***************************/
+#appeal-1 > p{
+    padding: 12px 24px 0;
+}
+
+/* 食品アピール見出し② ***************************************/
+#appeal-2 > div{
+    display: flex;
+    justify-content: center;
+}
+.point{
+    border: solid 1px #080;
+    width: 320px;
+    padding: 12px 24px 0;
+    text-align: center;
+}
+
+/* その他アピール見出し ***********************************/
+
+
+/* フッター ***************************************/
+footer {
+    text-align: center;
+    color: white;
+    background-color: #383838;
+    padding: 10px 0px;
+}
+
+small {
+    font-size: 12px;
+}
