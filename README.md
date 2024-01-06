@@ -1,4 +1,4 @@
-# LP-WebDesign
+# タカミメロン販促サイト
 アプリケーション演習 LPウェブデザイン課題(2024/1/11締切)
 ## ページのプレビュー
 https://shinshin7183.github.io/LP-WebDesign/
