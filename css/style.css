@@ -1,17 +1,15 @@
-@font-face{
-    font-family: "Inter";
-    src: url(../Inter-VariableFont_slnt,wght.ttf);
-}
-
 body{
-    /* font-family: Inter,"BIZ UDゴシック",sans-serif; */
+    font-family: "BIZ UDゴシック",sans-serif;
     background-color: #f8fff8;
 }
 
 /* ヘッダー&メインビジュアル ***************************/
-.mv-img {
+.mv-pc {
     width: 100%;
-    /* border: solid 1px #080; */
+}
+.mv-sm{
+    width: 100%;
+    display: none;
 }
 
 /* メインコンテンツ全体 ***************************************/
@@ -49,6 +47,11 @@ section{
     font-weight: bold;
     color: #FFFFFF;
     -webkit-text-stroke: 2px #004000;
+}
+.purchase:hover{
+    opacity: .75;
+    border-color: #fa8c3e;
+    -webkit-text-stroke: 2px #fa8c3e;
 }
 
 /* 食品アピール見出し① ***************************/
@@ -99,13 +102,12 @@ section{
 .others{
     background-color: #C5F5C5;
     width: 320px;
-    /* height: 240px; */
     font-size: 16px;
 }
 .others > h3{
     font-size: 24px;
     font-weight: bold;
-    padding: .5em 16px;
+    padding: 1em 16px;
 }
 .others > p{
     padding: 1em 16px;
@@ -125,11 +127,21 @@ small {
 
 /*メディアクエリ*/
 @media(max-width: 768px){
-    #appeal-2, #other-contents{
+    .mv-pc{
+        display: none;
+    }
+    .mv-sm{
+        display: block;
+    }
+
+    .point{
+        margin: 0 auto;
+
+    }
+    div:has(.others) > *{
         margin: 0 auto;
     }
     #appeal-2 > div, #other-contents > div{
-        display: block;
         flex-direction: column;
     }
 }
