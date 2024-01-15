@@ -12,7 +12,7 @@
     <header>
         <h1>
             <div class="mainvisual">
-                <img class="mv-img" src="メインビジュアル画像のパス" alt="Webサイト名">
+                <img class="mv-img" src="img/mainvisal.png" alt="Webサイト名">
             </div>
         </h1>
         <button class="purchase">ご購入はこちらから</button>
@@ -32,7 +32,7 @@
             <div>
                 <div class="point">
                     <h3>こだわりの温度管理</h3>
-                    <img src="" alt="生産の様子">
+                    <img src="img/point-1.png" alt="生産の様子">
                     <p>
                         当社の保有している生産地は、昼夜の温度差が大きいことから、メロンの栽培に適した環境となっています。
                         また、ビニールハウスを用いて、常に最適な温度を維持することで、糖度の高いおいしいメロンを生産することができます。
@@ -40,7 +40,7 @@
                 </div>
                 <div class="point">
                     <h3>ハイテク設備による厳選</h3>
-                    <img src="" alt="ハイテク設備">
+                    <img src="img/point-2.png" alt="ハイテク設備">
                     <p>
                         当社が保有しているハイテク設備によって、おいしいメロンの厳選を行っております。光センサによる糖度の計測、
                         画像解析装置によるメロンの形状・網目を測定し、お客様に高品質のメロンを提供します。
@@ -51,12 +51,52 @@
         </section>
         <!-- その他アピール見出し -->
         <section id="other-contents">
-
+            <h2 class="section-title">コラム</h2>
+            <div>
+                <img src="img/others-1.png" alt="カットしたメロン">
+                <div class="others">
+                    <h3>おいしい食べ方</h3>
+                    <p>
+                        メロンをカットし、そのまま食べると一番おいしく召し上がることができます。
+                        甘くて芳醇な香りが口の中に広がります。
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="img/others-2.png" alt="栄養素">
+                <div class="others">
+                    <h3>豊富な栄養素</h3>
+                    <p>
+                        メロンには「ビタミンC」「カリウム」「βカロテン」といった健康を促す栄養素が豊富に含まれています。
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="img/others-3.png" alt="時間経過">
+                <div class="others">
+                    <h3>追熟でさらに美味しく</h3>
+                    <p>
+                        召し上がる前に常温で追熟をすることで、より一層甘さが増します。
+                        食前の2~3時間前に冷蔵庫で冷やすことで、ひんやりと美味しくなります。
+                    </p>
+                </div>
+            </div>
+            <button class="purchase">ご購入はこちらから</button>
         </section>
     </main>
     <!-- フッター -->
     <footer>
         <small>Copyright © TEC アプリ演習23後期 進藤誠彌 Web All Rights Reserved.</small>
     </footer>
+
+    <!--ボタン動作チェック-->
+    <script>
+        const btn=document.querySelectorAll('.purchase');
+        btn.forEach(elm => {
+            elm.addEventListener('click',()=>{
+                alert("ご購入ありがとうございます！");
+            });
+        });
+    </script>
 </body>
 </html>
